@@ -1,0 +1,76 @@
+.section-navbar
+	padding: 8px 0px
+	background-color: $light
+	position: fixed
+	top: 0
+	float: left
+	z-index: 99
+	// -webkit-box-shadow: 0 1px 32px 0 rgba(0,0,0,.2)
+	// -moz-box-shadow: 0 1px 32px 0 rgba(0,0,0,.2)
+	// box-shadow: 0 1px 32px 0 rgba(0,0,0,.2)
+
+// .section-navbar .container
+// 	border: 1px solid black
+
+.nav-left-container
+	display: inline-block
+	// border: 1px solid black
+
+.icon-menu
+	padding-right: 16px
+
+.icon-menu,
+.nav-title
+	display: inline
+	margin: 0
+	line-height: 48px
+	font-weight: 900 !important
+
+.nav-right-container
+	margin: 4px 0
+	display: inline-block
+	// border: 1px solid red
+	float: right
+	line-height: 40px
+
+.nav-menu
+	margin: 0
+	padding: 0
+	display: flex
+	list-style: none
+	li
+		margin: 0
+		padding: 0 16px
+		font-size: $p-sm-font
+		color: $low-dark
+		border-radius: $rad-md
+		cursor: pointer
+		// border: 1px solid black
+		transition: background 200ms ease-in
+		&:hover
+			background-color: $PT100
+		&:active
+			background-color: $PT200
+		i
+			display: none
+
+@media screen and (max-width: 770px)
+	.nav-left-container
+		display: block
+		text-align: center
+		display: none
+	.nav-right-container
+		display: block
+		float: none
+	.nav-menu
+		a
+			flex: 1
+			text-align: center
+			color: red
+			span
+				display: none
+			i
+				display: block
+				padding: 8px 0
+				font-size: $p-lg-font
+				color: $low-dark
