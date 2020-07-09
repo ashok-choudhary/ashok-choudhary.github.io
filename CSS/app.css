@@ -237,7 +237,7 @@ a {
   border-radius: 0.5rem; }
 
 .html-progress {
-  width: 60%;
+  width: 70%;
   background-color: #ff6747; }
 
 .css-progress {
@@ -245,16 +245,20 @@ a {
   background-color: #78f5ff; }
 
 .js-progress {
-  width: 40%;
+  width: 55%;
   background-color: #d1ff1a; }
 
 .sass-progress {
   width: 75%;
   background-color: #ff509d; }
 
-.illustrator-progress {
+.inkscape-progress {
   width: 60%;
   background-color: #ff6747; }
+
+.php-progress {
+    width: 42%;
+    background-color: #132ab1; }
 
 .btn-primary {
   background-color: #8000F1; }
