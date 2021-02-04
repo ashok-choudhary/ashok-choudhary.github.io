@@ -260,6 +260,10 @@ a {
     width: 42%;
     background-color: #132ab1; }
 
+.java-progress {
+      width: 48%;
+      background-color: #13b167; }
+
 .btn-primary {
   background-color: #8000F1; }
   .btn-primary:hover {
