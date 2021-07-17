@@ -1,39 +1,32 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Test Page</title>
-    <script>
-  $(document).ready(function(){
-  $("#a").hover(function(){
-  $(#a1).css("background-color", "yellow");
-  }, function(){
-  $(#a1).css("background-color", "pink");
-  });
-  $("input").focus(function(){
-  $("span").css("display", "inline").fadeOut(2000);
-  });
-  $("input").blur(function(){
-  alert("blur event");
-  });
-  $(".hide").click(function(){
-  $("div").hide();
-  });
-  $(".show").click(function(){
-  $("div").show();
-  });
-  $(".in").click(function(){
-  $("div").fadeIn();
-  });
-  $(".out").click(function(){
-  $("div").fadeOut();
-  });
-  $("#animate").click(function(){
-  $("div").animate({height: "200px"});
-  });
-});
-    </script>
-  </head>
-  <body>
-    <a id="a" href="google.com">Google</a><span id="a1">Hello!!</span>
-  </body>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<body>
+
+<div class="tooltip"><a href="www.google.com">Google</a>
+  <span class="tooltiptext">some text</span>
+</div>
+</body>
 </html>
