@@ -1,8 +1,39 @@
 <html>
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Test Page</title>
+    <script>
+  $(document).ready(function(){
+  $("#1").hover(function(){
+  $(#1a).css("background-color", "yellow");
+  }, function(){
+  $(#1a).css("background-color", "pink");
+  });
+  $("input").focus(function(){
+  $("span").css("display", "inline").fadeOut(2000);
+  });
+  $("input").blur(function(){
+  alert("blur event");
+  });
+  $(".hide").click(function(){
+  $("div").hide();
+  });
+  $(".show").click(function(){
+  $("div").show();
+  });
+  $(".in").click(function(){
+  $("div").fadeIn();
+  });
+  $(".out").click(function(){
+  $("div").fadeOut();
+  });
+  $("#animate").click(function(){
+  $("div").animate({height: "200px"});
+  });
+});
+    </script>
   </head>
   <body>
-    <a href="google.com">Google</a>
+    <a id="1" href="google.com">Google</a><span id="1a">Hello!!</span>
   </body>
 </html>
